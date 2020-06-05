@@ -36,17 +36,15 @@
 //     numberOfQuoates = Number(prompt("Incorrect!, enter a number between 0 to 5 and you will see what your quoate is:"));
 // }
 
-let quotes = [
-    
-    {
-    quote: "You can cry again or You can try again. Choice  is yours."
-},
-    {
-    quote: "Success may require a lot of days. But progress only requires one."
-},
-    {
-    quote: "It is easy to fail, but if you do not pay attention and learn from your mistakes, it will never be possible to succeed."
-}
-    
-];
+// Here is my second try
 
+let array1 = ["You", "maybe", "many", "becomes"];
+let array2 = ["Really", "But", "everything", "suppose"];
+let array3 = ["Rabbit", "carrot", "his", "all"];
+
+function randomNumber(numberOfString) {
+    return numberOfString[Math.floor(Math.random() * array1 + array2 + array3)];
+}
+let quote =randomNumber(`${array1.length} ${array2.length} ${array3.length}`);
+let quoate = array2.indexOf(3) + array2.indexOf(4);
+console.log(quoate);
