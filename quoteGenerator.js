@@ -41,10 +41,11 @@
 let array1 = ["You", "maybe", "many", "becomes"];
 let array2 = ["Really", "But", "everything", "suppose"];
 let array3 = ["Rabbit", "carrot", "his", "all"];
-
-function randomNumber(numberOfString) {
-    return numberOfString[Math.floor(Math.random() * array1 + array2 + array3)];
-}
-let quote =randomNumber(`${array1.length} ${array2.length} ${array3.length}`);
-let quoate = array2.indexOf(3) + array2.indexOf(4);
-console.log(quoate);
+// array1[array1.indexOf[0]]
+// let randomIndex = Math.floor(Math.random() * array1.length)
+// // function randomNumber(numberOfString) {
+// //     return numberOfString[Math.floor(Math.random() * array1 + array2 + array3)];
+// // }
+// // let quote =randomNumber(`${array1.length} ${array2.length} ${array3.length}`);
+// // let quoate = array2.indexOf(3) + array2.indexOf(4);
+// // console.log(quoate);
