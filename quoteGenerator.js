@@ -36,14 +36,19 @@
 //     numberOfQuoates = Number(prompt("Incorrect!, enter a number between 0 to 5 and you will see what your quoate is:"));
 // }
 
-// Here is my second try
+//// Part1
 
 let array1 = ["You", "maybe", "many", "becomes"];
 let array2 = ["Really", "But", "everything", "suppose"];
 let array3 = ["Rabbit", "carrot", "his", "all"];
 
-let quoates = [array1, array2, array3];
+let randomIndex1 = Math.floor(Math.random() * array1.length);
+let randomIndex2 = Math.floor(Math.random() * array2.length);
+let randomIndex3 = Math.floor(Math.random() * array3.length);
 
-let array = quoates[index];
-let randomIndex = array[Math.floor(Math.random() * array.length)];
-alert(randomIndex);
+let string1 = array1[randomIndex1];
+let string2 = array2[randomIndex2];
+let string3 = array3[randomIndex3];
+
+let myQuote = `${string1} ${string2} ${string3}`;
+console.log(myQuote);
