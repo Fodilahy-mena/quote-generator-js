@@ -51,4 +51,25 @@ let string2 = array2[randomIndex2];
 let string3 = array3[randomIndex3];
 
 let myQuote = `${string1} ${string2} ${string3}`;
-console.log(myQuote);
+//console.log(myQuote);
+
+//// Part2
+
+//1. use prompt to ask the user how many times we want to generate a random quote
+//2. check if the prompt give us something between 1 and 5
+//3. we're going to use a loop somewhere, and it's going to last the number of times that the user entered in the prompt!
+//4. refactor our code into a function, and put the function call inside the loop
+//4.1 generate random numbers
+//4.2 show the generated quotes
+
+let numberOfQuotes = Number(prompt("Enter a number of time you want to generate a random quoate:"));//I've added prompt here
+if (numberOfQuotes >= 1 && numberOfQuotes <= 5) { // and I use an if statement
+    const randomQuoteGenerate = () => {
+        return myQuote[3];
+    }
+    for (let i = numberOfQuotes; i < numberOfQuotes; numberOfQuotes++) {// I'm not sure if it is what it meant to be
+        console.log(randomQuoteGenerate);
+    }
+} else {
+    numberOfQuoates = Number(prompt('Only enter a number between 1 and 5:'));// To check if the number is between 1 and 5
+}
