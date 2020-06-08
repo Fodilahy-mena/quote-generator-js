@@ -65,10 +65,10 @@ let myQuote = `${string1} ${string2} ${string3}`;
 let numberOfQuotes = Number(prompt("Enter a number of time you want to generate a random quoate:"));//I've added prompt here
 if (numberOfQuotes >= 1 && numberOfQuotes <= 5) { // and I use an if statement
     const randomQuoteGenerate = () => {
-        return myQuote[3];
+        
     }
     for (let i = numberOfQuotes; i < numberOfQuotes; numberOfQuotes++) {// I'm not sure if it is what it meant to be
-        console.log(randomQuoteGenerate);
+        console.log(myQuote);
     }
 } else {
     numberOfQuoates = Number(prompt('Only enter a number between 1 and 5:'));// To check if the number is between 1 and 5
