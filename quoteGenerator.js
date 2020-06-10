@@ -65,24 +65,42 @@ return myQuote;
 //4.2 show the generated quotes
 //let firstQuote = generateQuote;
 //let secondQuote = generateNewQuote;
-let numberOfQuotes = Number(prompt("Enter a number of time you want to generate a random quoate:"));//I've added prompt here
-if (numberOfQuotes >= 1 && numberOfQuotes <= 5) { // and I use an if statement
-    for (let i = 0; i < numberOfQuotes; i++) {
-        //console.log(generateQuote());
-      numberOfSets = Number(prompt("Enter a number 1 or 2 to help you which quote of set are you looking for:"));
-      if (numberOfSets === 1) {
-        console.log(myQuote);
-      } else if (numberOfSets === 2) {
-          console.log(newQuote);
-      } else {
-          console.error("Only enter a number 1 or 2");
-      }
-    }
-} else {
-    console.error('Only enter a number between 1 and 5:');// To check if the number is between 1 and 5
-}
+// let numberOfQuotes = Number(prompt("Enter a number of time you want to generate a random quoate:"));//I've added prompt here
+// if (numberOfQuotes >= 1 && numberOfQuotes <= 5) { // and I use an if statement
+//     for (let i = 0; i < numberOfQuotes; i++) {
+//         //console.log(generateQuote());
+//       numberOfSets = Number(prompt("Enter a number 1 or 2 to help you which quote of set are you looking for:"));
+//       if (numberOfSets === 1) {
+//         console.log(myQuote);
+//       } else if (numberOfSets === 2) {
+//           console.log(newQuote);
+//       } else {
+//           console.error("Only enter a number 1 or 2");
+//       }
+//     }
+// } else {
+//     console.error('Only enter a number between 1 and 5:');// To check if the number is between 1 and 5
+// }
 
 /// Part 3
+
+
+let numberOfSets = Number(prompt("Enter a number 1 or 2 to help you which type of quote set are you looking for:"));//I've added prompt here
+while (numberOfSets === 1 && numberOfSets === 2) {
+    numberOfQuotes = Number(prompt("Enter a number of time you want to generate a random quoate:"));
+    if (numberOfSets === 1 && numberOfQuotes >= 1 && numberOfQuotes <= 5) {
+        for (let i = 0; i < numberOfQuotes; i++) {
+            console.log(generateQuote);
+        }
+    } else if (numberOfSets === 2 && numberOfQuotes >= 1 && numberOfQuotes <= 5) {
+        for (let i = 0; i < numberOfQuotes; i++) {
+            console.log(generateQuote);
+        }
+    } else {
+        console.error('Only enter a number between 1 and 5:');
+    }
+} 
+
 
 let otherArray1 = ["True", "according to", "can you", "Robert"];
 let otherArray2 = ["It depends", "On the beach", "on they went", "supposingly"];
