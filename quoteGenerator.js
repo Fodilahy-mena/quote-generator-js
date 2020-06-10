@@ -74,7 +74,6 @@ return newQuote;
 //4.1 generate random numbers
 //4.2 show the generated quotes
 
-
 let numberOfSets = Number(prompt("Enter a number 1 or 2 to help you which quote of set are you looking for:"));
 if (numberOfSets === 1) {
     numberOfQuotes = Number(prompt("Enter a number of time you want to generate a random quoate:"));
