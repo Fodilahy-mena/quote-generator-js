@@ -46,7 +46,7 @@ return newQuote;
 // if (numberOfQuotes >= 1 && numberOfQuotes <= 5) {
 //     for (let i = 0; i < numberOfQuotes; i++) {
 //         console.log(generateQuote());
-//     } 
+//    
 // } else {
 //         console.error('Only enter a number between 1 and 5:');// To check if the number is between 1 and 5
 //     }
